@@ -1,34 +1,37 @@
 import { Link } from 'react-router-dom';
 import { Camera, Heart, Home as HomeIcon, Play, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
+  
   // Carousel images - using Unsplash for high-quality drone photography
   const carouselImages = [
     {
       url: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Wedding Perfection",
-      description: "Capturing your special day from breathtaking aerial perspectives"
+      titleKey: "hero.slides.wedding.title",
+      descriptionKey: "hero.slides.wedding.description"
     },
     {
       url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Luxury Real Estate",
-      description: "Showcasing properties with stunning aerial photography and videography"
+      titleKey: "hero.slides.realEstate.title",
+      descriptionKey: "hero.slides.realEstate.description"
     },
     {
       url: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Outdoor Ceremonies",
-      description: "Perfect aerial shots of outdoor weddings and scenic venues"
+      titleKey: "hero.slides.outdoor.title",
+      descriptionKey: "hero.slides.outdoor.description"
     },
     {
       url: "https://images.unsplash.com/photo-1560448204-e1a3145c13b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Modern Architecture",
-      description: "Highlighting architectural beauty and property features from above"
+      titleKey: "hero.slides.architecture.title",
+      descriptionKey: "hero.slides.architecture.description"
     },
     {
       url: "https://images.unsplash.com/photo-1544944194-1c2d3d5ec75e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Seaside Venues",
-      description: "Capturing the romance of waterfront weddings and coastal properties"
+      titleKey: "hero.slides.seaside.title",
+      descriptionKey: "hero.slides.seaside.description"
     }
   ];
 
@@ -76,7 +79,7 @@ const Home = () => {
             >
               <img
                 src={image.url}
-                alt={image.title}
+                alt={t(image.titleKey)}
                 className="w-full h-full object-cover"
               />
               {/* Dark overlay for text readability */}
@@ -119,22 +122,21 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
             <div className="mb-8">
               <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
-                Capture Life from Above
+                {t('hero.title')}
               </h1>
               <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
               <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed animate-slide-up">
-                Professional drone services for weddings and real estate. 
-                Creating stunning aerial footage that tells your story from a breathtaking perspective.
+                {t('hero.subtitle')}
               </p>
             </div>
             
             {/* Dynamic content based on current image */}
             <div className="mb-12 animate-fade-in">
               <h3 className="text-2xl md:text-3xl font-semibold mb-2">
-                {carouselImages[currentSlide].title}
+                {t(carouselImages[currentSlide].titleKey)}
               </h3>
               <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                {carouselImages[currentSlide].description}
+                {t(carouselImages[currentSlide].descriptionKey)}
               </p>
             </div>
             
@@ -145,7 +147,7 @@ const Home = () => {
               >
                 <span className="relative z-10 flex items-center justify-center">
                   <Camera className="h-5 w-5 mr-2" />
-                  View Services
+                  {t('hero.viewServices')}
                 </span>
                 <div className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </Link>
@@ -155,7 +157,7 @@ const Home = () => {
               >
                 <span className="flex items-center justify-center">
                   <Play className="h-5 w-5 mr-2" />
-                  See Our Work
+                  {t('hero.seeWork')}
                 </span>
               </Link>
             </div>
@@ -176,10 +178,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Drone Services
+              {t('services.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We specialize in creating captivating aerial content for life's most important moments and valuable properties.
+              {t('services.subtitle')}
             </p>
           </div>
 
@@ -188,32 +190,30 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-6">
                 <Heart className="h-8 w-8 text-pink-600 mr-4" />
-                <h3 className="text-2xl font-bold text-gray-900">Wedding Cinematography</h3>
+                <h3 className="text-2xl font-bold text-gray-900">{t('services.wedding.title')}</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                Transform your special day with breathtaking aerial footage. Our drones capture 
-                the romance and grandeur of your wedding from unique perspectives that will leave 
-                you and your guests in awe.
+                {t('services.wedding.description')}
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-pink-600 rounded-full mr-3"></div>
-                  Ceremony and reception coverage
+                  {t('services.wedding.features.ceremony')}
                 </li>
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-pink-600 rounded-full mr-3"></div>
-                  4K video and high-resolution photography
+                  {t('services.wedding.features.video')}
                 </li>
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-pink-600 rounded-full mr-3"></div>
-                  Edited highlight reels
+                  {t('services.wedding.features.highlights')}
                 </li>
               </ul>
               <Link
                 to="/services#wedding"
                 className="text-pink-600 font-semibold hover:text-pink-700 transition-colors"
               >
-                Learn More →
+                {t('services.wedding.learnMore')} →
               </Link>
             </div>
 
@@ -221,31 +221,30 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-6">
                 <HomeIcon className="h-8 w-8 text-blue-600 mr-4" />
-                <h3 className="text-2xl font-bold text-gray-900">Real Estate Media</h3>
+                <h3 className="text-2xl font-bold text-gray-900">{t('services.realEstate.title')}</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                Showcase properties like never before with stunning aerial photography and videography. 
-                Help potential buyers see the full scope and beauty of listings from above.
+                {t('services.realEstate.description')}
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Exterior and landscape photography
+                  {t('services.realEstate.features.exterior')}
                 </li>
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Property tour videos
+                  {t('services.realEstate.features.tours')}
                 </li>
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Quick turnaround times
+                  {t('services.realEstate.features.turnaround')}
                 </li>
               </ul>
               <Link
                 to="/services#realestate"
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors"
               >
-                Learn More →
+                {t('services.realEstate.learnMore')} →
               </Link>
             </div>
           </div>
@@ -257,10 +256,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose SkyVision?
+              {t('whyChoose.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We combine cutting-edge technology with creative expertise to deliver exceptional results.
+              {t('whyChoose.subtitle')}
             </p>
           </div>
 
@@ -269,10 +268,9 @@ const Home = () => {
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Camera className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Professional Equipment</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('whyChoose.equipment.title')}</h3>
               <p className="text-gray-600">
-                State-of-the-art drones with 4K cameras and stabilization technology 
-                for crystal-clear footage.
+                {t('whyChoose.equipment.description')}
               </p>
             </div>
 
@@ -280,10 +278,9 @@ const Home = () => {
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Star className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Expert Pilots</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('whyChoose.pilots.title')}</h3>
               <p className="text-gray-600">
-                Licensed and insured drone pilots with years of experience in 
-                wedding and real estate photography.
+                {t('whyChoose.pilots.description')}
               </p>
             </div>
 
@@ -291,10 +288,9 @@ const Home = () => {
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Play className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Fast Delivery</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('whyChoose.delivery.title')}</h3>
               <p className="text-gray-600">
-                Quick turnaround times with professional editing and color correction 
-                included in every package.
+                {t('whyChoose.delivery.description')}
               </p>
             </div>
           </div>
@@ -305,17 +301,16 @@ const Home = () => {
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Elevate Your Content?
+            {t('cta.title')}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact us today to discuss your project and get a personalized quote 
-            for our drone services.
+            {t('cta.subtitle')}
           </p>
           <Link
             to="/contact"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
-            Get Started Today
+            {t('cta.button')}
           </Link>
         </div>
       </section>

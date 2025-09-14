@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "portfolio": "Portfolio",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "language": "Język"
+  },
+  "hero": {
+    "title": "Uwiecznij Życie z Góry",
+    "subtitle": "Profesjonalne usługi dronowe dla ślubów i nieruchomości. Tworzymy wspaniałe nagrania z lotu ptaka, które opowiadają Twoją historię z zapierającej dech perspektywy.",
+    "viewServices": "Zobacz Usługi",
+    "seeWork": "Zobacz Nasze Prace",
+    "slides": {
+      "wedding": {
+        "title": "Idealne Śluby",
+        "description": "Uwieczniamy Twój wyjątkowy dzień z zapierających dech w piersiach perspektyw lotniczych"
+      },
+      "realEstate": {
+        "title": "Luksusowe Nieruchomości",
+        "description": "Prezentujemy nieruchomości dzięki wspaniałej fotografii i filmowaniu z powietrza"
+      },
+      "outdoor": {
+        "title": "Ceremonie na Świeżym Powietrzu",
+        "description": "Idealne ujęcia lotnicze ślubów plenerowych i malowniczych miejsc"
+      },
+      "architecture": {
+        "title": "Nowoczesna Architektura",
+        "description": "Podkreślamy piękno architektoniczne i cechy nieruchomości z góry"
+      },
+      "seaside": {
+        "title": "Miejsca nad Morzem",
+        "description": "Uwieczniamy romantyzm ślubów nad wodą i nieruchomości nadmorskich"
+      }
+    }
+  },
+  "services": {
+    "title": "Nasze Usługi Dronowe",
+    "subtitle": "Specjalizujemy się w tworzeniu fascynujących treści lotniczych dla najważniejszych momentów w życiu i cennych nieruchomości.",
+    "wedding": {
+      "title": "Filmowanie Ślubów",
+      "description": "Przemień swój wyjątkowy dzień dzięki zapierającym dech w piersiach nagraniom z powietrza. Nasze drony uwieczniają romantyzm i wielkość Twojego ślubu z unikalnych perspektyw, które pozostawią Ciebie i Twoich gości w zachwycie.",
+      "features": {
+        "ceremony": "Relacja z ceremonii i wesela",
+        "video": "Wideo 4K i fotografia wysokiej rozdzielczości",
+        "highlights": "Zmontowane filmy z najlepszymi momentami"
+      },
+      "learnMore": "Dowiedz się więcej"
+    },
+    "realEstate": {
+      "title": "Media Nieruchomości",
+      "description": "Zaprezentuj nieruchomości jak nigdy wcześniej dzięki wspaniałej fotografii i filmowaniu z powietrza. Pomóż potencjalnym nabywcom zobaczyć pełny zakres i piękno ofert z góry.",
+      "features": {
+        "exterior": "Fotografia zewnętrzna i krajobrazowa",
+        "tours": "Filmy z wizytą po nieruchomości",
+        "turnaround": "Szybkie terminy realizacji"
+      },
+      "learnMore": "Dowiedz się więcej"
+    }
+  },
+  "whyChoose": {
+    "title": "Dlaczego Wybierz SkyVision?",
+    "subtitle": "Łączymy najnowocześniejszą technologię z kreatywną ekspertyzą, aby dostarczyć wyjątkowe rezultaty.",
+    "equipment": {
+      "title": "Profesjonalny Sprzęt",
+      "description": "Najnowocześniejsze drony z kamerami 4K i technologią stabilizacji dla krystalicznie czystych nagrań."
+    },
+    "pilots": {
+      "title": "Ekspertów Piloci",
+      "description": "Licencjonowani i ubezpieczeni piloci dronów z wieloletnim doświadczeniem w fotografii ślubnej i nieruchomości."
+    },
+    "delivery": {
+      "title": "Szybka Dostawa",
+      "description": "Szybkie terminy realizacji z profesjonalną edycją i korekcją kolorów zawartą w każdym pakiecie."
+    }
+  },
+  "cta": {
+    "title": "Gotowy na Podniesienie Poziomu Swoich Treści?",
+    "subtitle": "Skontaktuj się z nami już dziś, aby omówić swój projekt i otrzymać spersonalizowaną wycenę naszych usług dronowych.",
+    "button": "Zacznij Już Dziś"
+  },
+  "footer": {
+    "description": "Profesjonalne usługi dronowe dla ślubów i nieruchomości. Uwieczniamy zapierające dech w piersiach nagrania i fotografie z lotu ptaka, aby zaprezentować Twoje wyjątkowe momenty i nieruchomości z unikalnej perspektywy.",
+    "quickLinks": "Szybkie Linki",
+    "contactInfo": "Informacje Kontaktowe",
+    "address": "123 Sky Lane\nAerial City, AC 12345",
+    "rights": "© 2024 SkyVision. Wszystkie prawa zastrzeżone.",
+    "privacy": "Polityka Prywatności",
+    "terms": "Regulamin"
+  }
+}

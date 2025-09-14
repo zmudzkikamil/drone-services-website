@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Capture Life from Above",
+    "subtitle": "Professional drone services for weddings and real estate. Creating stunning aerial footage that tells your story from a breathtaking perspective.",
+    "viewServices": "View Services",
+    "seeWork": "See Our Work",
+    "slides": {
+      "wedding": {
+        "title": "Wedding Perfection",
+        "description": "Capturing your special day from breathtaking aerial perspectives"
+      },
+      "realEstate": {
+        "title": "Luxury Real Estate",
+        "description": "Showcasing properties with stunning aerial photography and videography"
+      },
+      "outdoor": {
+        "title": "Outdoor Ceremonies",
+        "description": "Perfect aerial shots of outdoor weddings and scenic venues"
+      },
+      "architecture": {
+        "title": "Modern Architecture",
+        "description": "Highlighting architectural beauty and property features from above"
+      },
+      "seaside": {
+        "title": "Seaside Venues",
+        "description": "Capturing the romance of waterfront weddings and coastal properties"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Drone Services",
+    "subtitle": "We specialize in creating captivating aerial content for life's most important moments and valuable properties.",
+    "wedding": {
+      "title": "Wedding Cinematography",
+      "description": "Transform your special day with breathtaking aerial footage. Our drones capture the romance and grandeur of your wedding from unique perspectives that will leave you and your guests in awe.",
+      "features": {
+        "ceremony": "Ceremony and reception coverage",
+        "video": "4K video and high-resolution photography",
+        "highlights": "Edited highlight reels"
+      },
+      "learnMore": "Learn More"
+    },
+    "realEstate": {
+      "title": "Real Estate Media",
+      "description": "Showcase properties like never before with stunning aerial photography and videography. Help potential buyers see the full scope and beauty of listings from above.",
+      "features": {
+        "exterior": "Exterior and landscape photography",
+        "tours": "Property tour videos",
+        "turnaround": "Quick turnaround times"
+      },
+      "learnMore": "Learn More"
+    }
+  },
+  "whyChoose": {
+    "title": "Why Choose SkyVision?",
+    "subtitle": "We combine cutting-edge technology with creative expertise to deliver exceptional results.",
+    "equipment": {
+      "title": "Professional Equipment",
+      "description": "State-of-the-art drones with 4K cameras and stabilization technology for crystal-clear footage."
+    },
+    "pilots": {
+      "title": "Expert Pilots",
+      "description": "Licensed and insured drone pilots with years of experience in wedding and real estate photography."
+    },
+    "delivery": {
+      "title": "Fast Delivery",
+      "description": "Quick turnaround times with professional editing and color correction included in every package."
+    }
+  },
+  "cta": {
+    "title": "Ready to Elevate Your Content?",
+    "subtitle": "Contact us today to discuss your project and get a personalized quote for our drone services.",
+    "button": "Get Started Today"
+  },
+  "footer": {
+    "description": "Professional drone services for weddings and real estate. Capturing breathtaking aerial footage and photography to showcase your special moments and properties from a unique perspective.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "address": "123 Sky Lane\nAerial City, AC 12345",
+    "rights": "© 2024 SkyVision. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
